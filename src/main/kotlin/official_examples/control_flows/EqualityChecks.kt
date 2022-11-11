@@ -16,7 +16,7 @@ fun main() {
     // Returns false because authors and writers are distinct references.
     println(authors === writers)
 
-    println(max(99,-42))
+    println(max(99, -42))
 }
 
 /**
