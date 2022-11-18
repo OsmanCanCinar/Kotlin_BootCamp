@@ -40,4 +40,6 @@ fun main() {
     do {
         val y = getY()
     } while (y != null) // y is visible here!
+
+    // x in a..b, x !in a..b
 }

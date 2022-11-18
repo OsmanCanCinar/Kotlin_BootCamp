@@ -24,9 +24,9 @@ fun main() {
 
     // The Difference between list and array
     /***
-     *  Arrays have a fixed size while
-     *  (Mutable)List can adjust their size dynamically.
-     *  Moreover, Array is mutable whereas List is not.
+     *  Arrays (Array<T> have a fixed size while
+     *  List (MutableList<T>) can adjust their size dynamically.
+     *  Moreover, Array is mutable whereas List( Immutable as default) is not.
      */
     val a = arrayOf(1, 2, 3)
     a[0] = a[1] // OK

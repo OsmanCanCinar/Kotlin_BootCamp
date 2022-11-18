@@ -2,14 +2,20 @@ package bootcamp.basic_types
 
 fun main() {
 
+    // Generally, a string value is a sequence of characters in double quotes
     var str = "abcd 123"
+
     for (c in str) {
         println(c)
     }
 
     str = "abcd"
-    println(str.uppercase()) // Create and print a new String object
-    println(str) // The original string remains the same
+
+    // Create and print a new String object
+    println(str.uppercase())
+
+    // The original string remains the same
+    println(str)
 
     // concatenate strings
     var s = "abc" + 1

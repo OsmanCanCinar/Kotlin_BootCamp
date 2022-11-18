@@ -1,6 +1,7 @@
 package bootcamp.basic_types
 
 fun main() {
+
     /**
      * \t – tab
      * \b – backspace
@@ -12,10 +13,14 @@ fun main() {
      * \$ – dollar sign
      **/
 
+    // Character literals go in single quotes.
     val aChar: Char = 'a'
     aChar.toString()
 
     println(aChar)
-    println('\n') // Prints an extra newline character
+
+    // Prints an extra newline character
+    println('\n')
+
     println('\uFF00')
 }
