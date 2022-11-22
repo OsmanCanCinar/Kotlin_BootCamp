@@ -15,6 +15,12 @@ fun forLoop() {
     for (vegetable in vegetables) {
         println(vegetable)
     }
+
+    // Check the presence of an element in a collection
+    if ("Tomato" in vegetables) {
+    }
+    if ("Tomato" !in vegetables) {
+    }
 }
 
 // while and do-while constructs work similarly to most languages as well.

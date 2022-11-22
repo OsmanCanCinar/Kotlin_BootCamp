@@ -48,3 +48,15 @@ data class User(val name: String, val id: Int) {
     // Override the default equals method by declaring users equal if they have the same id.
     override fun equals(other: Any?): Boolean = other is User && other.id == this.id
 }
+
+/**
+ * Create DTOs and provides a Customer class with the following functionality:
+ *
+ * getters (and setters in case of vars) for all properties
+ * equals()
+ * hashCode()
+ * toString()
+ * copy()
+ * component1(), component2(), ..., for all properties
+ */
+data class Customer2(val name: String, val email: String)

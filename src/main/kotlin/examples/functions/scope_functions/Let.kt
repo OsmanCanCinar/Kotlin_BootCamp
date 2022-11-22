@@ -21,6 +21,9 @@ fun main() {
     printNonNull(null)
     printIfBothNonNull("ab", "cd")
     printIfBothNonNull("ab", null)
+
+    val value = 123
+
 }
 
 fun printNonNull(str: String?) {

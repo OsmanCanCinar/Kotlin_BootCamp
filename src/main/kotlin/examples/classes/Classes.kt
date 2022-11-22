@@ -4,6 +4,13 @@ package examples.classes
  * The class declaration consists of the class name, the class header (specifying its type parameters,
  * the primary constructor etc.) and the class body, surrounded by curly braces. Both the header and
  * the body are optional; if the class has empty body, curly braces can be omitted.
+ *
+ * Class layout
+ * The contents of a class should go in the following order:
+ * Property declarations and initializer blocks
+ * Secondary constructors
+ * Method declarations
+ * Companion object
  */
 
 // Declares a class named Customer without any properties or user-defined constructors.

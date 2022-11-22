@@ -54,3 +54,8 @@ fun sum(x: Int, y: Int): Int {
 
 // A single-expression function that returns an integer (inferred).
 fun multiply(x: Int, y: Int) = x * y
+
+/**
+ * Default values for function parameters
+ */
+fun foo(a: Int = 0, b: String = "") {}

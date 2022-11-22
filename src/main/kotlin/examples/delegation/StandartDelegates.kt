@@ -35,8 +35,10 @@ class LazySimple {
     }
 
     // The first call to get() executes the lambda expression passed to lazy() as an argument and saves the result.
+    // the value is computed only on first access
     val lazyStr: String by lazy {
         println("computed!")
+        // compute the string
         "my lazy"
     }
 }

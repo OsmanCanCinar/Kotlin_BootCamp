@@ -19,6 +19,12 @@ fun main() {
     getSystemSudoers().forEach { i ->
         println("info of the user $i")
     }
+
+    // Read-only list. Immutable
+    val listImmutable = listOf("a", "b", "c")
+
+    // Read-Write list. Mutable
+    val listMutable = mutableListOf("a", "b", "c")
 }
 
 // Creates a MutableList.

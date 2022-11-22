@@ -39,6 +39,15 @@ fun main() {
     val greeting = "Kotliner"
 
     //Prints a string with an expression. Expressions start with $ and are enclosed in curly braces.
+    // String interpolation
     println("Hello $greeting")
     println("Hello ${greeting.uppercase()}")
+
+
+    // Nullable Boolean
+    val z: Boolean? = null
+    if (z == true) {
+    } else {
+        // `b` is false or null
+    }
 }

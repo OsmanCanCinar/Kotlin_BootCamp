@@ -1,5 +1,7 @@
 package examples.collections
 
+import java.lang.IllegalStateException
+
 /**
  *A map is a collection of key/value pairs, where each key is unique and is used to retrieve the corresponding value.
  * For creating maps, there are functions mapOf() and mutableMapOf(). Using the to infix function makes initialization
@@ -19,6 +21,25 @@ fun main() {
 
     // Reads the account points balance, after updates.
     accountReports()
+
+    // Read-only map. Immutable
+    val mapImmutable = mapOf("a" to 1, "b" to 2, "c" to 3, "d" to null)
+
+    // Execute a statement if null
+    //val d = mapImmutable["d"] ?: throw IllegalStateException("d is null")
+    //println(d)
+
+    // Read-Write map. Mutable
+    val mapMutable = mutableMapOf("a" to 1, "b" to 2, "c" to 3)
+
+    // Access a map entry
+    println(mapImmutable["a"])
+    mapMutable["a"] = 4
+
+    // Traverse a map or a list of pairs
+    for ((k, v) in mapMutable) {
+        println("$k -> $v")
+    }
 }
 
 const val POINTS_X_PASS: Int = 15

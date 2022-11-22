@@ -4,6 +4,7 @@ fun main() {
 
     // Iterates over a range starting from 0 up to 3 (inclusive).
     // Like 'for(i=0; i<=3; ++i)' in other programming languages (C/C++/Java).
+    // closed range: includes 3
     for (i in 0..3) {
         print(i)
     }
@@ -11,6 +12,7 @@ fun main() {
 
     // Iterates over a range starting from 0 up to 3 (exclusive).
     // Like for loop in Python or like 'for(i=0; i<3; ++i)' in other programming languages (C/C++/Java).
+    // // half-open range: does not include 3
     for (i in 0 until 3) {
         print(i)
     }
@@ -51,4 +53,6 @@ fun main() {
     if (x !in 6..10) {
         print("$x is not in interval")
     }
+
+    (1..10).forEach {}
 }

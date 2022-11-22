@@ -16,8 +16,11 @@ fun main() {
     println(whenExpression(3.4))
     println(whenExpression(1))
     println(whenExpression(MyClass()))
+
+    println(transform("Red"))
 }
 
+// Instance checks
 fun whenStatement(obj: Any) {
     when (obj) {
         1 -> println("one")
@@ -39,3 +42,20 @@ fun whenExpression(obj: Any): Any {
 }
 
 class MyClass
+
+// Return on when statement
+fun transform(color: String): Int {
+    return when (color) {
+        "Red" -> 0
+        "Green" -> 1
+        "Blue" -> 2
+        else -> throw IllegalArgumentException("Invalid color param value")
+    }
+}
+
+fun transformAsExpression(color: String): Int = when (color) {
+    "Red" -> 0
+    "Green" -> 1
+    "Blue" -> 2
+    else -> throw IllegalArgumentException("Invalid color param value")
+}
