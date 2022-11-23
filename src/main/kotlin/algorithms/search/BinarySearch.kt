@@ -2,6 +2,10 @@ package algorithms.search
 
 import algorithms.search.util.AbstractSearchStrategy
 
+/**
+ * Binary Search is a search algorithm that finds the specified index of a value within
+ * a sorted array only.
+ */
 class BinarySearch<T> : AbstractSearchStrategy<T>() {
 
     override fun <T : Comparable<T>> perform(array: Array<T>, element: T): Int {
