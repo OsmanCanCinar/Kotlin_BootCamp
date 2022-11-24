@@ -1,9 +1,6 @@
 package algorithms.sort.util
 
-import algorithms.sort.BubbleSort
-import algorithms.sort.InsertionSort
-import algorithms.sort.MergeSort
-import algorithms.sort.SelectionSort
+import algorithms.sort.*
 
 fun main() {
 
@@ -25,5 +22,15 @@ fun main() {
     numbers = arrayOf(12, 11, 13, 5, 6)
     val mergeSort = MergeSort<Int>()
     mergeSort.perform(numbers)
+    println()
+
+    numbers = arrayOf(12, 11, 13, 5, 6)
+    val quickSort = QuickSort<Int>()
+    quickSort.perform(numbers)
+    println()
+
+    numbers = arrayOf(12, 11, 13, 5, 6)
+    val shellSort = ShellSort<Int>()
+    shellSort.perform(numbers)
     println()
 }
